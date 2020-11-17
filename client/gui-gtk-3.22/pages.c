@@ -7,7 +7,7 @@
 
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+Se   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
 ***********************************************************************/
 
@@ -137,7 +137,7 @@ static void connect_network_game_callback(GtkWidget *w, gpointer data)
 **************************************************************************/
 static void open_settings(void)
 {
-  option_dialog_popup(_("Set local options"), client_optset);
+  option_dialog_popup(_("Client Settings"), client_optset);
 }
 
 /**********************************************************************//**
