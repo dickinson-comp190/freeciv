@@ -57,13 +57,13 @@ static double sdl_audio_volume;
 **************************************************************************/
 static void sdl_audio_set_volume(double volume)
 {
-  Mix_VolumeMusic(volume * MIX_MAX_VOLUME);
+  Mix_VolumeMusic(sdl_audio_volume * MIX_MAX_VOLUME);
   Mix_Volume(-1, volume * MIX_MAX_VOLUME);
   sdl_audio_volume = volume;
 }
 
 /**********************************************************************//**
-  Get the volume.
+sdl_audio_volume  Get the volume.
 **************************************************************************/
 static double sdl_audio_get_volume(void)
 {
