@@ -171,8 +171,12 @@ bool audio_select_plugin(const char *const name)
 
   selected_plugin = i;
   log_verbose("Plugin '%s' is now selected", plugins[selected_plugin].name);
+
+  plugins[selected_plugin].set_volume(gui_options.sound_effects_volume / 100.0);
+
   return TRUE;
 }
+
 
 /**********************************************************************//**
   Initialize base audio system. Note that this function is called very
